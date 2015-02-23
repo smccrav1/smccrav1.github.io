@@ -1,0 +1,33 @@
+.lead {
+  font-family: 'Pacifico', cursive;
+  font-size: 27px;
+  font-weight: bold;  
+}
+
+.container {
+  margin-top: 15px;
+}
+
+.nav a {
+  color: #fff;
+}
+
+.tab-content {
+  margin-top: 15px;
+  color: #000;
+}
+
+body {
+  background-image:url('https://pbs.twimg.com/media/B6iYg2FCMAAs6ss.jpg:large');
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+h1,h3 {
+  color: #fff;
+}
+
+a {
+  color: white;
+  list-style: none;
+}
