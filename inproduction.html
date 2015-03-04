@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+    <script>
+      <!-- load html into tabs -->
+      $(function() {
+        $("#resume").load("resume.html");
+        $("#about").load("about.html");
+        $("#seeaswell").load("seeaswell.html");
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" type="text/css" media="screen" /> 
+    <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="styles/main.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <title>
+      Simon McCravy
+    </title>
+  </head> 
+ 
+  <body>
+
+    <div class="container">
+    
+      <div class="tabbable">
+      
+      <ul class="nav nav-tabs">
+        <li><a href="#resume" data-toggle="tab">Resume</a></li>
+        <li><a href="#about" data-toggle="tab">About</a></li>
+        <li><a href="#seeaswell" data-toggle="tab">See Also</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="ggc-itec">
+          <p class="lead">Currently at Georgia Gwinnett College</p>
+        </div>
+        <div class="tab-pane" id="My resume">
+        </div>
+        <div class="tab-pane" id="About">
+        </div>
+        <div class="tab-pane" id="Also see">
+        </div>
+      </div>
+
+      </div> <!-- tabbable -->
+
+    </div> <!-- container -->
+
+    <!-- use fancyBox to show external links in iframe -->
+    <script>
+      $(document).ready(function() {
+        $(".display-iframe").fancybox({
+          type:"iframe",
+          maxWidth:800,
+          maxHeight:600,
+          fitToView:false,
+          width:'75%',
+          height:'75%',
+          autoSize:false,
+          closeClick:false,
+          openEffect:'none',
+          closeEffect:'none'
+        });
+      });
+    </script>
+
+  </body> 
+  
+</html>
